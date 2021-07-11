@@ -1,0 +1,11 @@
+@import "colors";
+
+@function set-radius($size) {
+  @if $size == small {
+    @return 8px;
+  } @else if $size == pill {
+    @return 50px;
+  } @else if $size == circle {
+    @return 100px;
+  }
+}

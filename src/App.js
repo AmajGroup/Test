@@ -1,9 +1,10 @@
-import { Button } from "antd";
+import Layout from "./layout/Layout";
+import Products from "./views/products/Products";
 
 export default function App() {
   return (
-    <div className="m-2">
-      <Button type="link">Download</Button>
-    </div>
+    <Layout>
+      <Products />
+    </Layout>
   );
 }
