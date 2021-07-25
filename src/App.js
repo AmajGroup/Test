@@ -1,10 +1,23 @@
-import Layout from "./layout/Layout";
-import Products from "./views/products/Products";
+import { Button } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "./theme";
 
-export default function App() {
+function App() {
   return (
-    <Layout>
-      <Products />
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <div>
+        <h1>Welcome!</h1>
+
+        <p>This is my MUI Tailwind website!</p>
+
+        <div>
+          <Button variant="contained" color="primary">
+            Button
+          </Button>
+        </div>
+      </div>
+    </ThemeProvider>
   );
 }
+
+export default App;
